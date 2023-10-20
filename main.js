@@ -1,4 +1,5 @@
-
+//  Is this necessay?
+//  import {customers} from '/customers.js';
 
 //  Sample code from class
 function customerDirectoryCard(customer) {
@@ -7,4 +8,4 @@ function customerDirectoryCard(customer) {
 
 // Sample code from class
 let database = customers.map((customer) => customerDirectoryCard(customer))
-document.querySelector(.container).innerHTML = database;
+document.querySelector('.container').innerHTML = database;
