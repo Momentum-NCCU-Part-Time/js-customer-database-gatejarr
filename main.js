@@ -7,13 +7,13 @@
     customerName.innerText = `${customer.name.first} ${customer.name.last}`;
     let customerEmail = document.createElement('mailto');
     customerEmail.innerText = `${customer.email}`;
-    let addressNumName = document.createElement('h5');
+    let addressNumName = document.createElement('p');
     addressNumName.innerText = `${customer.location.street.number} ${customer.location.street.name}`;
-    let addressCityStateZip = document.createElement('h5');
+    let addressCityStateZip = document.createElement('p');
     addressCityStateZip.innerText = `${customer.location.city}, ${customer.location.state} ${customer.location.postcode}`;
-    let dateOfBirth = document.createElement('h5');
+    let dateOfBirth = document.createElement('p');
     dateOfBirth.innerText = `DOB: ${customer.dob.date}`;
-    let customerSince = document.createElement('h5');
+    let customerSince = document.createElement('p');
     customerSince.innerText = `Customer Since: ${customer.registered.date}`;
     customerCard.appendChild(customerPic);
     customerCard.appendChild(customerName);
