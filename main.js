@@ -1,14 +1,12 @@
-//  Is this necessay?
-  import {customers} from customers.js;
-
-/*  Sample code from class
-function customerDirectoryCard(customer) {
-    return <div class="firstName"> $</div>
-} */
-
-/* Sample code from class
-let database = customers.map((customer) => customerDirectoryCard(customer))
-document.querySelector('.container').innerHTML = database; */
-
-const firstName = customers.name.first;
-console.log(firstName);
+  let customerContainer = document.querySelector('.container');
+  function customerDirectoryCard(customer){
+    let customerCard = document.createElement('div');
+    let customerPic = document.createElement('img');
+    customerPic.src = `${customer.picture.large}`;
+    let customerName = document.createElement ('h3');
+    customerName.innerText = `${customer.name.first} ${customer.name.last}`;
+    customerCard.appendChild(customerPic);
+    customerCard.appendChild(customerName);
+    customerContainer.appendChild(customerCard);
+}
+  let database = customers.map((customer) => customerDirectoryCard(customer))
