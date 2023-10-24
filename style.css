@@ -30,5 +30,9 @@ p {
 }
 
 p:last-of-type {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+p:first-of-type {
+  padding-top: 5px;
 }
