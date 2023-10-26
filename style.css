@@ -31,7 +31,6 @@ div {
 
 p {
   font-size: 13px;
-  padding-bottom: 2px;
 }
 
 .address,
@@ -41,4 +40,5 @@ p {
 
 a {
   color: lightslategray;
+  text-decoration: none;
 }
