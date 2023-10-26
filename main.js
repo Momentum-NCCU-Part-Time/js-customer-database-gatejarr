@@ -16,6 +16,7 @@ function customerDirectoryCard(customer) {
 
   let customerEmail = document.createElement("a");
   customerEmail.innerText = customer.email;
+  customerEmail.href="mailto:" + customerEmail;
 
   let addressNumName = document.createElement("p");
   addressNumName.innerText =

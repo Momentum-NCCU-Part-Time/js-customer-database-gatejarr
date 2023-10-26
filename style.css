@@ -38,3 +38,7 @@ p {
 .date {
   padding-top: 5px;
 }
+
+a {
+  color: lightslategray;
+}
